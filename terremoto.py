@@ -24,7 +24,7 @@ def leer_csv_desde_url(url, sep=',', encoding='utf-8'):
 url = "https://drive.google.com/uc?export=download&id=1UyX7sRATSNbadNxUZ7AAmbeOUm7sVpGF"
 df = leer_csv_desde_url(url)
 # st.write(df)
-st.metric(df)
+# st.metric(df)
 mag_agno = df.nlargest(1, ['Magnitude'])['Year'].iloc[0]
 st.write(mag_agno)
 mag_valor = df.nlargest(1, ['Magnitude'])['Magnitude'].iloc[0]
